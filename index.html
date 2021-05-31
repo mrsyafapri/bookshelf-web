@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="bookshelf apps">
+  <meta name="description" content="Bookshelf Apps">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <!-- Icon -->
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+  <!-- Title -->
+  <title>Bookshelf Apps</title>
+</head>
+
+<body>
+  <header class="head_bar">
+    <h1 class="head_bar__title lobster-fm">Bookshelf Apps</h1>
+  </header>
+  <div class="jumbotron">
+    <h1>Bookshelf Apps</h1>
+    <p>Bookshelf Apps adalah sebuah website yang dibuat oleh <a href="http://mrsyafapri.github.io" style="color: white;"
+        target="_blank" rel="noopener noreferrer">Muhammad Rizki Syafapri</a>. Bookshelf Apps ini memiliki fitur
+      menambahkan, mencari, memindahkan, dan menghapus data Buku.</p>
+  </div>
+  <main>
+    <section class="input_section">
+      <h2>Masukkan Buku Baru</h2>
+      <form id="inputBook">
+        <div class="input">
+          <label for="inputBookTitle">Judul Buku</label>
+          <input id="inputBookTitle" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookAuthor">Penulis Buku</label>
+          <input id="inputBookAuthor" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookYear">Tahun Terbit</label>
+          <input id="inputBookYear" type="number" required>
+        </div>
+        <div class="input_inline">
+          <label for="inputBookIsComplete">Selesai dibaca</label>
+          <input id="inputBookIsComplete" type="checkbox">
+        </div>
+        <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+      </form>
+    </section>
+    <section class="search_section">
+      <h2>Cari Buku</h2>
+      <form id="searchBook">
+        <div class="input">
+          <input id="searchBookTitle" placeholder="Cari Buku..." type="search">
+        </div>
+        <button id="searchSubmit" type="submit">Cari Buku</button>
+      </form>
+    </section>
+    <section class="book_shelf">
+      <h2>Belum selesai dibaca</h2>
+      <div id="incompleteBookshelfList" class="book_list">
+      </div>
+    </section>
+    <section class="book_shelf">
+      <h2>Selesai dibaca</h2>
+      <div id="completeBookshelfList" class="book_list">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><a href="https://mrsyafapri.github.io" style="color: white; text-decoration: none;">MRSyafapri</a> &copy; <span
+        id="footer-year"></span> &middot; Dicoding Submission Belajar Membuat Front-End Web untuk Pemula</p>
+  </footer>
+  <!-- Script -->
+  <script src="assets/scripts/data.js" type="text/javascript"></script>
+  <script src="assets/scripts/dom.js" type="text/javascript"></script>
+  <script src="assets/scripts/script.js" type="text/javascript"></script>
+</body>
+
+</html>
